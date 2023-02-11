@@ -6,9 +6,7 @@ class BolsoPreview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 0),
-      child: Container(
+    return  Container(
         width: double.infinity,
         height: 430,
         decoration: const BoxDecoration(
@@ -40,7 +38,7 @@ class BolsoPreview extends StatelessWidget {
             //bolso
           ],
         ),
-      ),
+    
     );
   }
 }
