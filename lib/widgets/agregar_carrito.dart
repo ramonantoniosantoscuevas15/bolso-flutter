@@ -2,9 +2,9 @@ import 'package:bolso_flutter/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class AgregarCarrito extends StatelessWidget {
-  final String texto;
+  final Icon icon;
 
-  const AgregarCarrito({super.key, required this.texto});
+  const AgregarCarrito({super.key, required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +13,14 @@ class AgregarCarrito extends StatelessWidget {
       child: SizedBox(
         width: double.infinity,
         height: 90,
-        
         child: Row(
           children: [
-            Text('\$$texto',style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+            icon,
             const Spacer(),
-           const Boton(texto: 'Buy Now'),
-           const SizedBox(width: 20,)
-
+            const Boton(texto: 'Buy Now'),
+            const SizedBox(
+              width: 20,
+            )
           ],
         ),
       ),

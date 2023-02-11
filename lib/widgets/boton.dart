@@ -11,7 +11,7 @@ class Boton extends StatelessWidget {
       width: 150,
       height: 50,
       decoration: BoxDecoration(
-        color: const Color(0xffdfc8b9),
+        color: const Color(0xff0000FF),
         borderRadius: BorderRadius.circular(100)
       ),
       child: Text(texto, style: const TextStyle(color: Colors.white),),

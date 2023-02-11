@@ -12,15 +12,31 @@ class BolsoPreview extends StatelessWidget {
         width: double.infinity,
         height: 430,
         decoration: const BoxDecoration(
-            color:  Color(0xffdfc8b9),
-            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50), 
-            bottomRight: Radius.circular(50),
+            color:  Color(0xff0000FF),
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30), 
+            bottomRight: Radius.circular(30),
             topLeft: Radius.circular(5),
             topRight: Radius.circular(5)
             )),
-        child: Column(
-          children: const [
-            _Bolso()
+        child: Row(
+          children:  [
+            const Text('Price',style: TextStyle(fontSize: 15,color: Colors.white),),
+            const SizedBox(width: 10,),
+             const Text('\$234',style: TextStyle(fontSize: 30,color: Colors.white),),
+            const Spacer(),
+            Column(
+              children:const [
+                SizedBox(height: 150,),
+            
+            
+            _Bolso(),
+
+              ],
+            ),
+            
+            
+            
+            
             //bolso
           ],
         ),
@@ -36,7 +52,7 @@ class _Bolso extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: const [
-        Image(image: AssetImage('assets/adidas_crema.png')),
+        Image(image: AssetImage('assets/bag_1.png')),
       ],
     );
   }

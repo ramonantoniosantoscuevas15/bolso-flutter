@@ -21,10 +21,11 @@ class BolsoScreen extends StatelessWidget {
               child: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
             child: Column(
+            
+              
               children: const [
-                SizedBox(
-                  height: 10,
-                ),
+                
+                
                 _Colores(),
                 BolsoDescripcion(
                     descripcion:
@@ -35,7 +36,7 @@ class BolsoScreen extends StatelessWidget {
           )
           ),
           
-          const AgregarCarrito(texto: '234',)
+          const AgregarCarrito(icon: Icon(Icons.shopping_cart,size: 40,color: Colors.blue,),)
         ],
       ),
     );
@@ -100,11 +101,12 @@ class _Colores extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Row(
         children: const [
-          _BotonColor(color: Color(0xffdfc8b9)),
+          _BotonColor(color: Color(0xff2099F1)),
+          
           SizedBox(
             width: 5,
           ),
-          _BotonColor(color: Color(0xff2099F1)),
+          _BotonColor(color: Color(0xffdfc8b9)),
           SizedBox(
             width: 5,
           ),
